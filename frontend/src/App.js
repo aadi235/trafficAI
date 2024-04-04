@@ -11,7 +11,7 @@ import { Buffer } from 'buffer';
 function App() {
   // App settings
   const title = "Traffic";
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = "https://localhost:3000";
   const [selectedFile, setSelectedFile] = useState(null);
   const [result, setResult] = useState(null);
   const [count, setCount] = useState(null);
