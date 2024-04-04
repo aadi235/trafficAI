@@ -1,0 +1,164 @@
+.app {
+  background-color: white;
+}
+footer {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 20px;
+  background-color: rgb(248,249,250);
+  color: rgb(46, 44, 44);
+}
+
+.footer-copyright{
+  background-color: grey;
+  padding-left: 20px;
+  color: white;
+  margin: 0;
+}
+
+main {
+  margin-top: 50px;
+  padding: 20px;
+}
+p {
+  margin: 0;
+}
+
+.footer-contact {
+  margin-bottom: 1rem;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .results-image-container{
+      flex-direction: column;
+  }
+}
+
+.image-container {
+  display: flex;
+  flex:1;
+  padding: 20px;
+  max-height: 300px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  aspect-ratio: 4 / 3;
+  flex-grow: calc();
+}
+
+@media (max-width: 768px) {
+  .image-container{
+    min-height: 200px;
+  }
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .upload-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+
+.upload-form input, .upload-form p, .upload-form button{
+  margin: 20px;
+}
+
+.upload-form p {
+  padding-top: 5px;
+}
+
+.upload-form input{
+  width: 50%;
+  height: 30px;
+  margin-left: 0px;
+}
+
+@media (max-width: 768px) {
+  .upload-form input, .upload-form button{
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .upload-form{
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  justify-content: left;
+  min-height: 300px;
+  padding: 20px;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-content{
+    flex-direction: column;
+  }
+}
+
+.upload-btn {
+  color: #000000;
+  border-radius: 5px;
+  font-size: 20px;
+  background: #cfcfcf;
+  padding: 12px 40px 12px 40px;
+  text-decoration: none;
+}
+
+.upload-btn:hover {
+  background: #6e6e6e;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .upload-btn{
+    padding: 0 40px 0 40px;
+  }
+}
